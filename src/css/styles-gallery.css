@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.gallery-item {
+  list-style-type: none;
+  display: block;
+  text-decoration: none;
+}
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
