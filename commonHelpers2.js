@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";const a="feedback-form-state",t=document.querySelector(".feedback-form"),o=t.querySelector("textarea");function c(e){e.preventDefault();const n=o.value,l=t.elements.email.value,r=JSON.stringify({handleText:n,handleForm:l});localStorage.setItem(a,r)}t.addEventListener("submit",c);const s=localStorage.getItem(a)??"";try{const e=JSON.parse(s);console.log(e),o.value=e.handleText,t.elements.email.value=e.handleForm}catch{console.log("Немає збереженої інформації!")}
+//# sourceMappingURL=commonHelpers2.js.map
